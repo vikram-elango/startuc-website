@@ -1,0 +1,336 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background: #F5F5F5;
+  
+  }
+  
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #F5F5F5;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .logo {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: default;
+  }
+  
+  .v-logo{
+    height: 100px;
+    padding: 20px;
+    animation: slideDown 1s ease forwards
+  }
+
+  #home-navbar{
+      animation: slideDown 1.5s ease forwards;
+  }
+
+  #team-navbar{
+    animation: slideDown 2s ease forwards;
+}
+
+#projects-navbar{
+    animation: slideDown 2.5s ease forwards;
+}
+
+  
+  .navbar a {
+    font-size: 30px;
+    color: #003660;
+    text-decoration: none;
+    font-weight: 500;
+    padding:30px 50px;
+    transition: background-color 0.3s ease;
+  
+  
+  }
+  
+  .navbar a:hover{
+    background-color: #003660;
+    color: #FEBC11;
+  }
+  
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navbar-links {
+    display: flex;
+    justify-content: flex-end; 
+    width: 100%; 
+  }
+  
+  
+  
+  
+  
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  
+  .position{
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .intro-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
+  }
+  
+  .intro-left-container{
+    width: 60%;
+    text-align: left; 
+    opacity: 0;
+  }
+
+
+  .intro{
+    display: block;
+    font-size: 50px;
+    color: #0A0A0A;
+    margin-bottom: 20px; 
+  }
+  #animatedText{
+    font-size: 30px;
+    color: #003660;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    margin-left: 300px;
+    
+  }
+
+  #x{
+    padding: 6px;
+
+  }
+
+  .intro-name{
+    display: block;
+    font-size: 60px;
+    color: #0A0A0A;
+    margin-bottom: 20px; 
+  }
+  
+  .connect{
+    color: #003660; 
+    margin-bottom: 30px;
+    text-align: center; 
+    font-size: 28px;
+    animation: slideUp 1.5s ease forwards;
+
+  }
+  
+  .icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    gap: 90px; 
+    animation: slideUp 2s ease forwards;
+  }
+  
+  .socials{
+    height: 40px;
+  }
+
+  .join-us{
+      background-color: #FEBC11;
+      text-align: center;
+      width: 150px;
+      font-size: 30px;
+      margin-bottom:40px;
+      border-radius: 15px;
+      cursor: pointer;
+      animation: slideUp 1s ease forwards;
+      text-decoration: none;
+
+  }
+
+  .join-us:visited{
+    color: #003660;
+
+  }
+
+  .join-us:hover{
+      background-color: #003660;
+      color: #FEBC11;
+
+
+  }
+
+
+  .button{
+      display: flex;
+      justify-content: center;
+
+  }
+  
+  
+  @media (max-width: 768px) {
+    .intro-container {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    .intro-left-container, .intro-right-container {
+      flex: none;
+      width: 100%;
+      align-items: center;
+      text-align: center;
+  
+    }
+
+    .icons {
+      justify-content: space-around; /* Space out icons evenly */
+      margin-top: 20px; /* Add some space above the icons */
+    }
+  }
+  
+  
+  
+  
+  /* end of first page */
+  /* second page  */
+
+  
+  
+
+
+  /* 
+  @media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    .navbar {
+        padding: 5px 10px;
+    }
+    
+  } */
+  
+  @media only screen and (max-width: 600px) {
+    .navbar .nav-links {
+        flex-direction: column;
+        padding: 0;
+    }
+  
+    .nav-item {
+        font-size: 16px;
+        padding: 8px;
+    }
+  
+    .name, .position, .Intro {
+        font-size: 16px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+  
+    .body-center {
+        flex-direction: column;
+    }
+  
+    .picture {
+        width: 90%;
+        margin: 0 auto;
+    }
+  
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+  
+    .left-container, .right-container {
+        width: 100%;
+    }
+  
+    .exp-logo {
+        width: 80%;
+        margin: 0 auto;
+    }
+  
+    .item, .item-1, .item-2 {
+        text-align: center;
+    }
+  
+    .icons {
+        flex-direction: row;
+        justify-content: center;
+        padding-left: 0;
+        padding-top: 10px; 
+    }
+  
+    .github, .email, .linkedin {
+        padding-top: 0; 
+        margin: 0 10px; 
+    }
+  }
+  
+  .navbar-links a, .logo{
+    display: inline-block;
+    animation: slideDown 1s ease forwards;
+    opacity: 0; /* Initially hide the links */
+    
+  }
+  
+  @keyframes slideDown {
+    from { transform: translateY(-100px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  .intro-left-container{
+    animation: slideSide 1s ease forwards;
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes slideSide{
+    from {transform: translateX(-100px); opacity:0;}
+    to {transform: translateY(0); opacity: 1;}
+  }
+  
+  .profile-picture{
+    animation: slideUp 1s ease forwards;
+    animation-delay: 1s;
+    opacity: 0;
+  
+  }
+  
+  @keyframes slideUp{
+    from {transform: translateY(1000px); opacity: 0;}
+    to {transform: translateY(0);opacity: 1;}
+  }
+  
+  /* end of second page */
+  
+  /* start of third page  */
+  
+  
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+  }
+ 

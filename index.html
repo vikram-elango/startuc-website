@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <title>StartUC</title>
+        <link rel="shortcut icon" href="/images/ucstart1.svg" class="favicon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Merriweather&family=Montserrat:wght@400;500&family=Noto+Sans:ital@0;1&family=Poppins:ital,wght@1,500&family=Roboto&family=Sacramento&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href='style.css'>
+    
+    
+</head>
+
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="navbar-logo">
+          <div href="#" ><img src="/images/startuc.png" class="v-logo"></div>
+        </div>
+        <div class="navbar-links">
+          <a id = "home-navbar" class="home-nav" href="/index.html">Home</a>
+          <a id = "team-navbar" class="experience-nav" href="/index.html">Team</a>
+          <a id = "projects-navbar" class="projects-nav" href="/index.html">Projects</a>
+        </div>
+      </nav>
+    </header>
+    <div class="intro-container">
+      <div class="intro-left-container">
+        <div id="animatedText" ></div>
+        <div class="button"><a href="https://docs.google.com/forms/d/e/1FAIpQLScZAzs62Q6QWSo77wFzG95_3ImS2M3S5Iz4V7eWjVN9SXDINA/viewform" target="_blank" class="join-us">Join Us</a></div>
+        
+        <div class="connect" id="sideslide">Connect with us, through the links below!</div>
+        <div class="icons" id="sideslide">
+          <div ><a href="https://www.linkedin.com/company/gaucho-careers/" target="_blank"><img class="socials" src="/images/linkedin.png" ></a></div>
+          <div > <a href="mailto:admin@startuc.com" target="_blank"><img class="socials" src="/images/GMail New Icon.png"></a></div>
+          <div ><a href="https://www.instagram.com/start.uc/?igsh=MTRpaXYyeWNhd2l0MQ%3D%3D&utm_source=qr" target="_blank"><img class="socials" src="/images/instagram.png"></a></div>
+          <div ><a href="https://twitter.com/i/flow/login?redirect_after_login=%2FStart__UC" target="_blank"><img class="socials" id="x" src="/images/logo-black.png"></a></div>
+
+      </div>
+
+
+      </div>
+
+
+    </div>
+
+<script>
+    const phrases = [
+      "Where your story begins..."
+    ]; 
+    const typingDelay = 130;
+    let letterIndex = 0;
+    let currentPhrase = [];
+  
+    function typePhrase() {
+      const animatedText = document.getElementById('animatedText');
+      if (letterIndex < phrases[0].length) { 
+        currentPhrase.push(phrases[0][letterIndex]);
+        letterIndex++;
+        animatedText.textContent = currentPhrase.join('');
+        setTimeout(typePhrase, typingDelay);
+      }
+    }
+  
+    window.onload = () => {
+      setTimeout(typePhrase, typingDelay);
+    };
+  </script>
+  
+  </body>
+
+<footer>
+
+</footer>
+
+</html>
