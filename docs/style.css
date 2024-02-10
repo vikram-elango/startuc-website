@@ -363,4 +363,9 @@
     .icons{
       gap: 30px;
     }
+
+    .intro-left-container{
+      margin-top: 150px;
+      
+    }
   }
